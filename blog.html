@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fz Speed monster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <a href="index.html" class="active">
+            <h1 class="title"><img src="./logo.png" /></h1>
+        </a>
+        <section id="nav">
+            <a href="index.html">Home</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="feature.html">Project Feature</a>
+        </section>
+    </div>
+
+
+
+    <div class="box-container">
+
+
+
+        <div id="display-box" class="blog-box">
+            <div id="question">1. Difference between local storage and session storage</div>
+            <div class="answer">
+                A key difference between local storage and session storage is the expiration date. <br><br>
+                <hr> <br>
+                <ul style="padding-left: 20px;">
+                    <li>
+                        localStorage maintains storage across browser sessions. So the storage is saved even if the
+                        domain is opened in a new tab or the browser is closed and reopened. There is no term.
+                    </li> <br>
+                    <li>
+                        Session storage is cleared when the page session ends. A page session lasts as long as the tab
+                        or browser is open. Therefore, when you open a new tab or a new window, it creates a new session
+                        and new storage.
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+        <div id="display-box" class="blog-box">
+            <div id="question">2. Difference between block scope and global scope</div>
+            <div class="answewr">
+
+                Global scope can be accessed in all the function but block scope only can be accessed inside the block
+                of its declaration <br><br>
+                <hr> <br>
+                <ul style="padding-left: 20px;">
+                    <li> <b> Global Scope</b> <br>
+                        Global scope means that variables can be accessed from any part of the program, any
+                        function or conditional condition can access that variable. function or variable defined
+                        outside curly braces is called a global variable and has global
+                        scope.
+                    </li> <br>
+                    <li><b> local Scope</b> <br>
+                        Local scope means that variables can be accessed only from the declaration part of a block or
+                        function.Only the eligible function or block can access that local variable or function.
+                        function or variable defined inside curly braces is called a local variable and has local
+                        scope.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="display-box" class="blog-box">
+
+            <div id="question">3. How event loop works?</div>
+            <div class="answewr">Event loop is an endless loop, which waits for tasks, executes them and then sleeps
+                until it receives more tasks. The event loop executes tasks from the event queue only when the call
+                stack is empty.There is no ongoing task. The event loop allows us to use callbacks and promises.
+                <br> <br>
+                <hr> <br>
+                For example, when a user clicks a button on a web page, an event is generated and the event loop will
+                execute the callback function associated with that event.
+            </div>
+
+        </div>
+        <div id="display-box" class="blog-box">
+
+            <div id="question">4. How can we get undefined??</div>
+            <div class="answewr">
+                undefined is a non-configurable, non-writable property. he initial value of undefined is : undefined. We
+                can get undefine in so many way.
+                <br> <br>
+                <hr> <br>
+                <ul style="padding-left:20px">
+                    <li>if any variable has no value.</li>
+                    <li>if any variable's value is writen Undefined, then it will show.</li>
+                    <li>In the Array, if you look for index which does not exist.</li>
+                    <li>if delete an index of an array and look for that value.</li>
+                    <li>if any function has two parameter but you send only one parameter.</li>
+                    <li>in the function, if Return has no specific condition to return.</li>
+                    <li>In the Object, if any property has no value when it looks for.</li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
