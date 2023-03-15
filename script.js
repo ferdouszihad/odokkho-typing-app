@@ -19,8 +19,8 @@ const load = () => {
   fetch("./texts.json")
     .then((res) => res.json()) // There is a mistake in Ress.json.  Json is a method
     .then((data) => {
-      questionText = "hello";
-      question.innerHTML = "hello";
+      questionText = data[Math.floor(Math.random() * data.length)];
+      question.innerHTML = questionText;
     });
 };
 load();
