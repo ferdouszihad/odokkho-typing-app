@@ -21,7 +21,12 @@ function addHistory(
 
   histories.appendChild(newRow);
 
-  let previousTests = JSON.parse(localStorage.getItem("testHistry")) || [];
+  //  Ze name Set korbo,  she name get korbo
+
+  let previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];
+  debugger;
+
+  console.log(previousTests);
   previousTests.push({
     questionText,
     timeTaken,

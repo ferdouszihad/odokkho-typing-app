@@ -17,10 +17,10 @@ let currentTime = 0;
 // Load and display question
 const load = () => {
   fetch("./texts.json")
-    .then((res) => res.json)
+    .then((res) => res.json()) // There is a mistake in Ress.json.  Json is a method
     .then((data) => {
-      questionText = data[Math.floor(Math.random() * data.length)];
-      question.innerHTML = questionText;
+      questionText = "hello";
+      question.innerHTML = "hello";
     });
 };
 load();
@@ -116,12 +116,13 @@ const gameOver = () => {
 };
 
 const closeModal = () => {
-  modalbackground.classList.toggle("hidden");
-  ResultModal.classList.toggle("hidden");
+  modalBackground.classList.toggle("hidden");
+  resultModal.classList.toggle("hidden");
 };
 
 // START Countdown
-startBtn.addEventlistener("click", () => {
+startBtn.addEventListener("click", () => {
+  // Typing Mistake It will be addEventListener
   if (startTime) return;
 
   let count = 3;
